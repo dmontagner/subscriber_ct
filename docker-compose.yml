@@ -1,0 +1,14 @@
+input-subscriber:
+   build: $INPUT_SUB_DIR
+   privileged: true
+   # commenting the image because we are building it
+   # image: $INPUT_SUB_IMAGE_NAME
+   container_name: $INPUT_SUB_CONTAINER_NAME
+   environment:
+      - "DEBUG=true"
+   ports:
+      - "$LOCAL_DEBUG_UI:8088/tcp"
+   volumes:
+      - /etc/localtime:/etc/localtime
+      - /etc/timezone:/etc/timezone 
+  

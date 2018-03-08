@@ -1,0 +1,20 @@
+#! /bin/bash
+
+## Image and container
+export MAIN_IMAGE_NAME=subscriber
+export MAIN_CONTAINER_NAME=subscriber_ct
+
+export INPUT_SUB_DIR=plugins/subscriber_ct
+export INPUT_SUB_IMAGE_NAME=input-sub
+export INPUT_SUB_CONTAINER_NAME=subscriber_input
+
+export DOCKER_COMPOSE_FILE=docker-compose.yml
+
+## Local ports that will be redirected to the Open NTI
+## Startup will fail if some ports are already in use
+export LOCAL_DEBUG_UI=8088
+
+## Local directories that will be mapped into the container
+export LOCAL_DEBUG_DIR=debug
+
+
