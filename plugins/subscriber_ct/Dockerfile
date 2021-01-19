@@ -1,7 +1,6 @@
 FROM ubuntu:xenial
 MAINTAINER Diogo Montagner
 
-ADD     apt/sources.list /etc/apt/sources.list
 ADD     apt/apt.conf /etc/apt/apt.conf
 
 RUN     apt-get -y update --allow-unauthenticated && \
