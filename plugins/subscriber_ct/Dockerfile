@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER Diogo Montagner <dmontagner@juniper.net>
+MAINTAINER Diogo Montagner
 
 ADD     apt/sources.list /etc/apt/sources.list
 ADD     apt/apt.conf /etc/apt/apt.conf
